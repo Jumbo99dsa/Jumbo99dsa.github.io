@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ควยไอสัส</title>
+  <style>
+    body {
+      background-color: rgb(236, 179, 222);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: red;
+      font-size: 48px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: white;
+      border: 2px solid red;
+      cursor: pointer;
+    }
+    #heart {
+      font-size: 100px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>คลิกเพื่อดูความในใจ ❤️</h1>
+  <button onclick="sayLove()">กดตรงนี้จ้า</button>
+  <div id="heart"></div>
+  <script>
+    function sayLove() {
+      document.getElementById("heart").innerHTML = "ควยไอสัส 🖕";
+    }
+  </script>
+</body>
+</html>
